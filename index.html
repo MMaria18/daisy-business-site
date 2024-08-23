@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Care</title>
+
+    <!-- daisy & Tailwind -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- tailwind  css config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(139, 195, 74)',
+                        secondary: 'rgb(17, 17, 17)',
+                        body: 'rgb(248, 246, 243)',
+                        accent: 'rgb(106, 151, 57)',
+                        body_neutral: 'rgb(51, 51, 51)',
+                    },
+                    fontFamily: {
+                        Poppins: 'Poppins',
+                    },
+                    backgroundImage: {
+                        leaf: "url('./images/leaf01.png')",
+                        call_to_action: "url('./images/call.jpg')",
+                    },
+                },
+            },
+        }
+ </script>
+
+
+</head>
+<body class="Poppins">
+<!-- navbar -->
+    <nav class="w-11/12 mx-auto">
+        <div class="navbar bg-base-100 p-0 py-3">
+            <div class="navbar-start">
+    
+              <a href="#" class="">
+                <img class="w-36" src="./images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                <li class="hover:text-primary transition-colors ease-in-out duration-300 " ><a>Home</a></li>
+                <li class="hover:text-primary transition-colors ease-in-out duration-300"><a>Everything</a></li>
+                <li class="hover:text-primary transition-colors ease-in-out duration-300"><a>Groceries</a></li>
+                <li class="hover:text-primary transition-colors ease-in-out duration-300"><a>About us</a></li>
+                <li class="hover:text-primary transition-colors ease-in-out duration-300"><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+    
+                <div class="flex items-center gap-3 text-lg">
+                    <button class="text-accent flex items-center gap-2 text-xl font-semibold">
+                        <span>$20.00</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+                          
+                    </button>
+    
+    
+    
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                          </svg>
+                          
+                    </button>
+    
+                </div>
+              
+    
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                      </svg>
+                      
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0">
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300 " ><a>Home</a></li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300"><a>Everything</a></li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300"><a>Groceries</a></li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300"><a>About us</a></li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300"><a>Contact</a></li>
+                
+                </ul>
+              </div>
+            </div>
+          </div>
+    </nav>
+
+
+    <section class="bg-leaf  bg-no-repeat bg-right-bottom">
+        <div class="w-full h-full bg-body opacity-90" >
+
+            <div class="lg:w-9/12 py-32 flex mx-auto items-center gap-20">
+                <!-- banner image -->
+                <div class="flex-1">
+                    <img src="images/bannerbg.png" alt="">
+
+                </div>
+
+                <!-- banner text -->
+                <div class="flex-1">
+
+                    <h3 class="text-xl font-semibold px-1">Best Quality Products</h3>
+                    <h1 class="text-5xl font-bold leading- py-5">Join The Organic Movement</h1>
+                    <p class="my-3 text-lg">Organic Care is certified as Cruelty Free products. Means, Organic Care not only has NO Animal Fat or Animal Ingredients, we Do not Test our Products on Animals.<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 inline-flex">
+                        <path d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z" />
+                      </svg>
+                      </p>
+
+                    <div>
+                        <button class="bg-accent text-white rounded-lg px-5 py-3 flex items-center gap-2 hover:bg-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline-flex">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
